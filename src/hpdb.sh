@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-#biggy script
+#hpdb script
 
 #statics
-#mgxcmd="~/Desktop/HelpalDB/asterix-installer-0.9.1-binary-assembly/bin/managix"
 mgxcmd="../asterix-installer-0.9.1-binary-assembly/bin/managix"
 AQLcmd="python3 AdapterAsterix/QueryInstance.py"
 sparkcmd="../spark-2.3.0-bin-hadoop2.7/bin/spark-shell"
@@ -73,8 +72,6 @@ run(){
                 echo "$cmd" > data/testScala.scala
 				$sparkcmd < data/testScala.scala
                 #sc.parallelize(1 to 1000).count()
-				#$AQLcmd "$cmd"
-				#../../spark/bin/spark-submit ../../spark/TestData/PyScript.py
 				;;
 				*)
 				echo "Paras Missing!"
@@ -113,9 +110,6 @@ run(){
 			echo "Command Error!"
 			;;	
 		esac	
-		#pass cmd to internal
-		#newcmd="describe -n mydb"
-		#$mgxcmd "$newcmd"
 		read -e -p "HelpalDB>>> " cmd
 	done
 }
