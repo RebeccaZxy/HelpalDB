@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration xmlns="installer">
+    <configured>true</configured>
+    <backup>
+        <hdfs>
+            <version>0.20.2</version>
+            <url></url>
+        </hdfs>
+        <backupDir>/Users/rebecca/Desktop/HelpalDB/asterix-installer-0.9.1-binary-assembly/backup</backupDir>
+    </backup>
+    <zookeeper>
+        <homeDir>/Users/rebecca/Desktop/HelpalDB/asterix-installer-0.9.1-binary-assembly/.installer/zookeeper_home</homeDir>
+        <clientPort>2900</clientPort>
+        <servers>
+            <java_home>/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre</java_home>
+            <server>127.0.0.1</server>
+        </servers>
+    </zookeeper>
+</configuration>
